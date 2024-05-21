@@ -1,11 +1,11 @@
 <%= form_with(model: todo, id: "#{dom_id(todo)}_form") do |form| %>
   <% if todo.errors.any? %>
-    <div id="error_explanation" role="alert" class="alert alert-error my-3">
+    <div id="error_explanation" role="alert" class="alert alert-error my-3 block ">
       <h2><%= pluralize(todo.errors.count, "error") %> prohibited this todo from being saved:</h2>
 
       <ul>
         <% todo.errors.each do |error| %>
-          <li><%= error.full_message %></li>
+          <li> • <%=  error.full_message %></li>
         <% end %>
       </ul>
     </div>
