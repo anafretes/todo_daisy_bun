@@ -69,4 +69,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
+
+# For tailwindcss
 gem "cssbundling-rails", "~> 1.4"
