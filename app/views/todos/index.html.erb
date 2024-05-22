@@ -4,18 +4,18 @@
   </h2>
   
   <%= turbo_frame_tag "todos-container", class: "mt-3 block max-w-2xl w-full bg-base-200 py-6 px-4 border rounded shadow-sm" do %>
-    <div class="border-b bg-base-200 w-full mb-3">
-      <ul class="flex space-x-2 justify-center">
+    <div class="bg-base-200 w-full mb-3">
+      <ul class="flex space-x-2 justify-center border-b">
         <li>
           <%= link_to "Incomplete",
             todos_path(status: "incomplete"),
-            class: "inline-block py-4 px-4 text-sm font-medium" 
+            class: "inline-block py-4 px-4 hover:bg-base-300 rounded" 
           %>
         </li>
         <li>
           <%= link_to "Complete",
             todos_path(status: "complete"),
-            class: "inline-block py-4 px-4 text-sm font-medium"
+            class: "inline-block py-4 px-4 hover:bg-base-300 rounded"
           %>
         </li>
       </ul>
